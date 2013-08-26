@@ -1,0 +1,11 @@
+<%= form_for @attachment, :html => { :multipart => true }, :remote => true do |f| %>
+  <div class="field">
+    <%= f.label :audio_file %>
+    <%= f.file_field :audio_file %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Upload" %>
+  </div>
+<% end %>
+
+<div id="interactionContainer"></div>
